@@ -1,0 +1,114 @@
+.interactive-message {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.message-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--rose-petal) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.message-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(255, 107, 157, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.message-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 107, 157, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.message-card.hovered::before {
+  opacity: 1;
+}
+
+.card-emoji {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  filter: drop-shadow(0 5px 15px rgba(255, 107, 157, 0.3));
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--deep-rose);
+  margin-bottom: 1rem;
+}
+
+.card-message {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--burgundy);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.card-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--rose-petal) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .message-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-emoji {
+    font-size: 3rem;
+  }
+}

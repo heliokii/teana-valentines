@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative corner elements */
+.app::after,
+.app::before {
+  content: '';
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* Removed blur to improve rendering performance and text clarity */
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.app::before {
+  top: -100px;
+  right: -100px;
+  background: var(--rose-petal);
+}
+
+.app::after {
+  bottom: -100px;
+  left: -100px;
+  background: var(--deep-rose);
+}

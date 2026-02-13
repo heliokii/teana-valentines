@@ -1,0 +1,51 @@
+.floating-flowers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.flower {
+  position: absolute;
+  user-select: none;
+  pointer-events: auto;
+  /* Allow hover */
+  cursor: pointer;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  will-change: transform;
+}
+
+.flower:hover {
+  z-index: 10;
+}
+
+/* Specific flower styles */
+.flower-tulip {
+  color: #ff6b9d;
+}
+
+.flower-rose {
+  color: #e91e63;
+}
+
+.flower-daisy {
+  color: #ffffff;
+}
+
+/* Tulip Sprite Implementation */
+.tulip-sprite {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  background-image: url('../../assets/tulips.png');
+  /* Expecting the file in src/assets/tulips.png */
+  background-size: 500% 200%;
+  /* Assuming 5 columns, 2 rows for 10 items */
+  background-repeat: no-repeat;
+  display: inline-block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}

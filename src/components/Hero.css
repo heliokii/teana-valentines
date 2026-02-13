@@ -1,0 +1,157 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Decorative roses */
+.decorative-rose {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--rose-petal) 0%, var(--deep-rose) 100%);
+  border-radius: 50% 0% 50% 0%;
+  opacity: 0.3;
+  filter: blur(40px);
+}
+
+.decorative-rose-left {
+  top: 10%;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.decorative-rose-right {
+  bottom: 10%;
+  right: 0;
+  transform: rotate(135deg);
+}
+
+/* Message wrapper */
+.message-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* Heart icon */
+.heart-icon {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  filter: drop-shadow(0 10px 30px rgba(255, 107, 157, 0.4));
+}
+
+/* Hero title */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+
+  /* Solid color for base visibility */
+  color: #c2185b;
+  /* Deep Rose / Red-Pink base */
+
+  /* 3D Effect Layering */
+  text-shadow:
+    0 1px 0 #880e4f,
+    0 2px 0 #880e4f,
+    0 3px 0 #880e4f,
+    0 4px 0 #880e4f,
+    0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+  display: inline-block;
+  z-index: 50;
+  /* Ensure high z-index */
+}
+
+.hero-title span {
+  display: inline-block;
+  position: relative;
+}
+
+
+
+/* Add sparkle effect to certain letters */
+.hero-title span:nth-child(7),
+.hero-title span:nth-child(15),
+.hero-title span:nth-child(23) {
+  animation: sparkle 3s infinite;
+}
+
+@keyframes sparkle {
+
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.5) drop-shadow(0 0 10px var(--rose-petal));
+  }
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 2rem;
+}
+
+.subtitle p {
+  font-family: var(--font-body);
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 300;
+  color: var(--deep-rose);
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 10px var(--shadow);
+}
+
+/* Scroll hint */
+.scroll-hint {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--rose-petal);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heart-icon {
+    font-size: 4rem;
+  }
+
+  .decorative-rose {
+    width: 100px;
+    height: 100px;
+  }
+
+  .scroll-hint {
+    bottom: 2rem;
+    font-size: 0.8rem;
+  }
+}

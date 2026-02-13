@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💖 Happy Heart's Day, Teana
 
 A beautiful, interactive Valentine's Day website built with React and Framer Motion, featuring stunning animations, hover effects, and romantic design elements.
@@ -201,3 +202,7 @@ Created as a special Valentine's Day gift, this website combines modern web tech
 **Made with ❤️ for Teana**
 
 *Happy Valentine's Day! 💖*
+=======
+# teana-valentines
+A website for my beloved.
+>>>>>>> 2f2bd23ed7cdca90796b64d12c1e28ae271f8058

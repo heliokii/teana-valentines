@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# 💖 Happy Heart's Day, Teana
+
+#  Happy Heart's Day, Teana
 
 A beautiful, interactive Valentine's Day website built with React and Framer Motion, featuring stunning animations, hover effects, and romantic design elements.
 
@@ -7,7 +7,7 @@ A beautiful, interactive Valentine's Day website built with React and Framer Mot
 ![React](https://img.shields.io/badge/React-18.2.0-61dafb)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-10.16.4-ff0055)
 
-## ✨ Features
+##  Features
 
 ### Interactive Components
 - **Animated Hero Section**: Letter-by-letter reveal animation with pulsing heart

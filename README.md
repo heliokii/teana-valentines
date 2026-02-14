@@ -30,7 +30,7 @@ A beautiful, interactive Valentine's Day website built with React and Framer Mot
 - **Visual Feedback**: Smooth transitions and micro-interactions throughout
 - **Accessibility**: Semantic HTML and keyboard-friendly interactions
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -73,7 +73,7 @@ To preview the production build locally:
 npm run preview
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 valentines-teana/

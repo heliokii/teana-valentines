@@ -100,7 +100,7 @@ valentines-teana/
         └── Footer.css
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Colors
 Edit the CSS variables in `src/styles/global.css`:
@@ -128,7 +128,7 @@ Adjust animation timings in the component files:
 - Look for `transition` objects in motion components
 - Modify `duration`, `delay`, and `ease` values
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **React 18.2**: UI library
 - **Framer Motion 10.16**: Animation library
@@ -136,7 +136,7 @@ Adjust animation timings in the component files:
 - **CSS3**: Styling with modern features (gradients, backdrop-filter, animations)
 - **Google Fonts**: Playfair Display and Cormorant Garamond
 
-## 🎯 Interactive Elements
+##  Interactive Elements
 
 1. **Hero Section**
    - Animated letter-by-letter text reveal
@@ -158,27 +158,27 @@ Adjust animation timings in the component files:
    - Gradient mesh backgrounds
    - Decorative rose elements
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Desktop**: 1200px and above (optimal viewing)
 - **Tablet**: 768px - 1199px
 - **Mobile**: Below 768px
 
-## 🎭 Animation Details
+## Animation Details
 
 - **Page Load**: Staggered animations for smooth entrance
 - **Scroll Triggers**: Elements animate when they enter viewport
 - **Hover Effects**: Interactive feedback on cards and envelopes
 - **Continuous**: Floating hearts and pulsing elements
 
-## 💡 Tips for Best Experience
+## Tips for Best Experience
 
 - View on a larger screen for the full visual impact
 - Hover over interactive elements to see animations
 - Click on the envelope cards to reveal messages
 - Scroll slowly to enjoy the scroll-triggered animations
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Issue**: Animations not working
 - **Solution**: Clear browser cache and hard refresh (Ctrl+Shift+R)
@@ -189,11 +189,11 @@ Adjust animation timings in the component files:
 **Issue**: Fonts not loading
 - **Solution**: Check your internet connection (Google Fonts requires internet)
 
-## 📄 License
+## License
 
 This project is created with love for personal use. Feel free to customize and share!
 
-## 💌 About
+## About
 
 Created as a special Valentine's Day gift, this website combines modern web technologies with romantic design to create a memorable digital experience. Every animation, color choice, and interaction has been carefully crafted to convey love and appreciation.
 
